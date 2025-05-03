@@ -2,70 +2,65 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Login - TaskMate</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | TaskMate</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
+            font-family: 'Segoe UI', sans-serif;
             background-color: #f8f9fa;
         }
-        .login-container {
+        .login-section {
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .login-box {
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
-            width: 100%;
             max-width: 400px;
+            margin: auto;
         }
-        .login-img {
-            max-width: 100%;
-            height: auto;
+        .btn-primary {
+            background-color: #4f5eff;
+            border-color: #4f5eff;
+        }
+        .btn-primary:hover {
+            background-color: #3d49cc;
+        }
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #4f5eff;
         }
     </style>
 </head>
 <body>
-<div class="container login-container">
-    <div class="row w-100">
-        <div class="col-md-6 d-flex align-items-center justify-content-center">
-            <div class="login-box">
-                <div class="text-center mb-4">
-                    <h2><strong>Login</strong></h2>
-                    <p class="text-muted">Masuk untuk mengakses akun TaskMate Anda</p>
-                </div>
-                <form method="POST" action="{{ route('/login') }}">
+    <div class="container-fluid login-section d-flex align-items-center justify-content-center">
+        <div class="row w-100">
+            <div class="col-md-6 d-flex flex-column justify-content-center align-items-center text-center">
+                <img src="{{ asset('images/taskmate-logo.png') }}" alt="TaskMate" class="mb-4" style="height: 50px;">
+                <h2 class="fw-bold">Login</h2>
+                <p class="mb-4">Masuk untuk mengakses akun TaskMate Anda</p>
+
+                <form action="{{ route('login') }}" method="POST" class="login-box w-100">
                     @csrf
                     <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" id="email" class="form-control" required autofocus autocomplete="email">
-                        @error('email')
-                            <div class="text-danger small">{{ $message }}</div>
-                        @enderror
+                        <input type="email" name="email" class="form-control" placeholder="Email" required autofocus>
                     </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Password</label>
-                        <input type="password" name="password" id="password" class="form-control" required autocomplete="current-password">
-                        @error('password')
-                            <div class="text-danger small">{{ $message }}</div>
-                        @enderror
+                    <div class="mb-3 position-relative">
+                        <input type="password" name="password" class="form-control" placeholder="Password" required>
+                        <span class="position-absolute top-50 end-0 translate-middle-y me-3" style="cursor: pointer;">
+                            👁️ <!-- ganti dengan icon jika pakai feather/fontawesome -->
+                        </span>
                     </div>
-                    <div class="d-grid">
+                    <div class="d-grid mb-3">
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <div class="mt-3 text-center">
-                    <span>Tidak punya akun TaskMate? <a href="{{ route('register') }}" class="text-danger">Daftar</a></span>
-                </div>
+                <p> Tidak Punya Akun TaskMate? <a href="#" class="text-danger">Daftar</a>
+
+            </div>
+
+            <div class="col-md-6 d-none d-md-block text-center">
+                <img src="{{ asset('images/login-illustration.png') }}" alt="Login Illustration" class="img-fluid" style="max-height: 500px;">
             </div>
         </div>
-        <div class="col-md-6 d-none d-md-flex align-items-center justify-content-center">
-            <img src="{{ asset('images/login-image.png') }}" alt="Login Illustration" class="login-img">
-        </div>
     </div>
-</div>
 </body>
 </html>
