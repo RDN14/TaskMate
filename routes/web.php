@@ -19,7 +19,7 @@ Route::get('/todo/create', function () {
 });
 
 Route::get('/detail', function () {
-    return view('auth.detail_tugas');Route::get('/', function () {
+    return view('todo.detail_tugas');Route::get('/', function () {
     return view('welcome');
 })->name('home');
 
@@ -36,23 +36,23 @@ Route::get('/todo/create', function () {
 })->name('todo.create');
 
 Route::get('/detail', function () {
-    return view('auth.detail_tugas');
+    return view('todo.detail_tugas');
 })->name('detail');
 
 Route::get('/simpan', function () {
-    return view('auth.simpan');
+    return view('todo.simpan');
 })->name('simpan');
 
 Route::get('/halaman', function () {
-    return view('auth.halaman_akun');
+    return view('todo.halaman_akun');
 })->name('halaman');
 });
 
 Route::get('/simpan', function () {
-    return view('auth.simpan');
+    return view('todo.simpan');
 });
 
 Route::get('/halaman', function () {
-    return view('auth.halaman_akun');
+    return view('todo.halaman_akun');
 });
 

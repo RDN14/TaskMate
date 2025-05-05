@@ -38,8 +38,12 @@
   <form class="d-flex ms-auto me-3">
     <input class="form-control me-2" type="search" placeholder="Cari..." aria-label="Search">
   </form>
-  <span class="me-3">11 April 2025</span>
-  <img src="https://via.placeholder.com/40" class="rounded-circle" alt="Profile">
+  <div class="ms-auto d-flex align-items-center">
+                <span class="me-3">📞 +62 1234 123</span>
+                <span class="me-3">📧 kelompok17@gmail.com</span>
+                <span class="me-3">📅 11 April 2025</span>
+                <img src="https://i.pravatar.cc/30" class="rounded-circle" alt="Avatar">
+            </div>
 </nav>
 
 <div class="container task-container">
