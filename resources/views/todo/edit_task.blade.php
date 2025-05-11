@@ -23,13 +23,12 @@
   </style>
 </head>
 
-<nav class="navbar bg-body-tertiary">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-      <img src="img/Logo (1).png" alt="Bootstrap" width="200" height="50">
-    </a>
-  </div>
-</nav>
+  <nav class="navbar navbar-light bg-white px-4 py-3 shadow-sm">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="{{ asset('images/logo-taskmate.png') }}" alt="Logo" class="logo">
+          <span class="ms-2 fw-bold">TaskMate</span>
+      </a>
+  </nav>
 
 <body>
 
