@@ -70,8 +70,8 @@
         </div>
 
         <div class="d-flex justify-content-between">
-          <a href="#" class="btn btn-secondary">Batal</a>
-          <button href="#" type="submit" class="btn btn-primary">Simpan Perubahan</button>
+          <a href="{{ route('detail') }}" class="btn btn-secondary">Batal</a>
+          <button href="{{ route('detail') }}" type="submit" class="btn btn-primary">Simpan Perubahan</button>
         </div>
       </form>
     </div>
