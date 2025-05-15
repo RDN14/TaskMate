@@ -38,7 +38,7 @@
                 <h2 class="fw-bold">Login</h2>
                 <p class="mb-4">Masuk untuk mengakses akun TaskMate Anda</p>
 
-                <form action="{{ route('login') }}" method="POST" class="login-box w-100">
+                <form action="{{ route('home') }}" method="POST" class="login-box w-100">
                     @csrf
                     <div class="mb-3">
                         <input type="email" name="email" class="form-control" placeholder="Email" required autofocus>
@@ -53,7 +53,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <p> Tidak Punya Akun TaskMate? <a href="#" class="text-danger">Daftar</a>
+                <p> Tidak Punya Akun TaskMate? <a href="{{ route('register') }}" class="text-danger">Daftar</a>
 
             </div>
 

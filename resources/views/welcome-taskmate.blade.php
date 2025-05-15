@@ -72,11 +72,11 @@
             <div class="row justify-content-center btn-container">
                 <div class="col-md-4 text-center">
                     <p class="fw-bold">Sudah Punya Akun TaskMate? Silakan Login!</p>
-                    <a href="/login" class="btn btn-login w-100">Login</a>
+                    <a href="{{ route('login') }}" class="btn btn-login w-100">Login</a>
                 </div>
                 <div class="col-md-4 text-center">
                     <p class="fw-bold">Belum Punya Akun Taskmate? Register Sekarang!</p>
-                    <a href="/register" class="btn btn-register w-100">Register</a>
+                    <a href="{{ route('register') }}" class="btn btn-register w-100">Register</a>
                 </div>
             </div>
         </div>

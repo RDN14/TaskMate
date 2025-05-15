@@ -134,7 +134,7 @@
 
   <!-- Logout -->
   <div class="text-end mt-4">
-    <button class="btn btn-danger">Keluar</button>
+    <a href="{{ route('home') }}" class="btn btn-danger" >Keluar</></a>
   </div>
 </div>
 

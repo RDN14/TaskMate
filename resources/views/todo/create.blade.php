@@ -39,7 +39,7 @@
             <div class="col-md-6">
                 <div class="shadow-box">
                     <h5 class="text-center fw-bold mb-4">TAMBAH TUGAS</h5>
-                    <form action="#" method="POST">
+                    <form action="{{ route('home') }}" method="POST">
                         @csrf
 
                         <div class="mb-3">
@@ -76,7 +76,7 @@
                         </div>
 
                         <div class="d-flex justify-content-between">
-                            <a href="#" class="btn btn-secondary">Batal</a>
+                            <a href="{{ route('home') }}" class="btn btn-secondary">Batal</a>
                             <button type="submit" class="btn btn-primary">Simpan</button>
                         </div>
 

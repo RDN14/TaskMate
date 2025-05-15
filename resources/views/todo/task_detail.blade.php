@@ -35,7 +35,7 @@
     <div class="detail-card">
       <div class="d-flex justify-content-between align-items-center mb-3">
         <h4 class="mb-0">Detail Tugas</h4>
-        <a href="#" class="btn btn-outline-secondary btn-sm btn-back">Kembali</a>
+        <a href="{{ route('home') }}" class="btn btn-outline-secondary btn-sm btn-back">Kembali</a>
       </div>
 
       <h5 class="fw-bold">TUGAS MULU</h5>
@@ -49,7 +49,7 @@
       <p> MALAZ </p>
 
       <div class="d-flex justify-content-end">
-        <a href="#" class="btn btn-primary">Edit Tugas</a>
+        <a href="{{ route('edit') }}" class="btn btn-primary">Edit Tugas</a>
       </div>
     </div>
   </div>

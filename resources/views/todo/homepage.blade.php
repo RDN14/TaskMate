@@ -35,7 +35,7 @@
   <div class="container">
     <div class="d-flex justify-content-between align-items-center mb-3">
       <h4>Daftar Tugas</h4>
-      <a href="#" class="btn btn-primary btn-add">+ Tambah Tugas</a>
+      <a href="{{ route('create') }}" class="btn btn-primary btn-add">+ Tambah Tugas</a>
     </div>
 
     <!-- List of Tasks -->
@@ -46,7 +46,7 @@
           <p class="card-text text-muted mb-1">Deadline: 10 Mei 2025</p>
           <div class="d-flex justify-content-between">
             <span class="badge bg-success">Selesai</span>
-            <a href="#" class="btn btn-sm btn-outline-primary">Detail</a>
+            <a href="{{ route('detail') }}" class="btn btn-sm btn-outline-primary">Detail</a>
           </div>
         </div>
       </div>
@@ -57,7 +57,7 @@
           <p class="card-text text-muted mb-1">Deadline: 12 Mei 2025</p>
           <div class="d-flex justify-content-between">
             <span class="badge bg-warning text-dark">Belum Selesai</span>
-            <a href="#" class="btn btn-sm btn-outline-primary">Detail</a>
+            <a href="{{ route('detail') }}" class="btn btn-sm btn-outline-primary">Detail</a>
           </div>
         </div>
       </div>
