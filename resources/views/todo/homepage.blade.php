@@ -24,11 +24,12 @@
 <body>
 
   <nav class="navbar navbar-light bg-white px-4 py-3 shadow-sm">
-      <a class="navbar-brand d-flex align-items-center" href="#">
-          <img src="{{ asset('images/logo-taskmate.png') }}" alt="Logo" class="logo">
-          <span class="ms-2 fw-bold">TaskMate</span>
-      </a>
-  </nav>
+  <a class="navbar-brand d-flex align-items-center" href="#">
+    <img src="{{ asset('images/logo-taskmate.png') }}" alt="Logo" class="logo" style="height: 32px;">
+    <span class="ms-2 fw-bold fs-5">TaskMate</span>
+  </a>
+</nav>
+
 
   <!-- Content -->
   <div class="container">
