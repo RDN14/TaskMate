@@ -53,7 +53,7 @@
                         <button type="submit" class="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <p> Tidak Punya Akun TaskMate? <a href="#" class="text-danger">Daftar</a>
+                <p> Tidak Punya Akun TaskMate? <a href="{{ route('register') }}" class="text-danger">Daftar</a>
 
             </div>
 

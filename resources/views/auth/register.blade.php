@@ -41,26 +41,20 @@
     <div class="col-md-6">
         <h3 class="fw-bold">Daftar Akun</h3>
         <p class="text-muted">Mari kita persiapkan semuanya agar Anda dapat mengakses akun pribadi Anda.</p>
-        <form action="#" method="POST">
+        <form action="{{ route('register.store') }}" method="POST">
             @csrf
             <div class="row mb-3">
                 <div class="col">
-                    <input type="text" name="first_name" class="form-control" placeholder="Nama Depan" required>
-                </div>
-                <div class="col">
-                    <input type="text" name="last_name" class="form-control" placeholder="Nama Belakang" required>
+                    <input type="text" name="name" class="form-control" placeholder="Username" required>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="col">
                     <input type="email" name="email" class="form-control" placeholder="Email" required>
                 </div>
-                <div class="col">
-                    <input type="text" name="phone" class="form-control" placeholder="Nomor HP" required>
-                </div>
             </div>
             <div class="mb-3">
-                <input type="password" name="password" class="form-control" placeholder="Kata Sandi" required>
+                <input type="password" name="password" class="form-control" placeholder="Password" required>
             </div>
             <div class="mb-3">
                 <input type="password" name="password_confirmation" class="form-control" placeholder="Konfirmasi Kata Sandi" required>
